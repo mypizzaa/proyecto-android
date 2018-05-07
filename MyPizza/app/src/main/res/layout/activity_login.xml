@@ -1,18 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="cat.proven.view.mypizza.LoginActivity">
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+    android:background="@drawable/backimagevertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
+        android:id="@+id/userTv"
+        android:textColor="@color/white"
+        android:text="@string/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"/>
+
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+    <TextView
+        android:id="@+id/passwordTv"
+        android:text="@string/password"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginLeft="50dp" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:password="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <Button
+        android:id="@+id/loginB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/loginB"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/registerTv"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textSize="20dp"
+        android:layout_marginLeft="50dp"/>
+
+    </LinearLayout>
